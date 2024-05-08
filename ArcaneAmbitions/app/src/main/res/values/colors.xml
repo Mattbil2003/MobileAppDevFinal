@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121212</color> <!-- dark grey -->
+    <color name="colorPrimaryDark">#000000</color> <!-- black -->
+    <color name="colorAccent">#E20721</color> <!-- vibrant pink -->
+    <color name="textColorPrimary">#FFFFFF</color> <!-- white -->
+    <color name="windowBackground">#303030</color> <!-- dark grey -->
+    <color name="buttonColor">#6200EE</color> <!-- deep purple -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- white -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#00FE3F</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/titleInput"
+        android:layout_marginTop="8dp"
+        android:hint="Description"
+        android:minHeight="100dp" />
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionInput"
+        android:layout_marginTop="16dp"
+        android:hint="Set Completion Time"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/questNotificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createTaskButton"
+        android:layout_marginTop="16dp"
+
+        android:visibility="gone"
+        android:text="Wait until quest completion notification then go to Home."
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/createTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionInput"
+        android:layout_marginTop="227dp"
+        android:text="Create Task" />
+</RelativeLayout>

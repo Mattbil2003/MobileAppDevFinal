@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pfp" />
+
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xpProgressBar"
+        android:layout_marginTop="-65dp"
+        android:gravity="center"
+        android:text="Level: 0"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/xpProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_marginTop="65dp"
+        android:max="100"
+        android:progress="50" />
+
+    <TextView
+        android:id="@+id/goldCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xpProgressBar"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="Gold: 1234"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/resetQuestsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Quests"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/goldCount"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
